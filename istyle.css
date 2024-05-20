@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300;400;600;700&display=swap');
+
+:root{
+	--white: #f5f5f2;
+	--LIBL1: #BAE6FC;
+	--LIBL2: #7ED1FB;
+	--CYn: #00dede;
+	--NBL1: #3DB2F3;
+	--NBL2: #54A0CC;
+	--MAJBL2: #4081a3;
+	--MAJBL	: #6050DC;
+	--DABL1: #0D537B;
+	--dark: #0c0d0a;
+}
+
+html, body{ height: 100%; scroll-behavior: smooth; }
+body { font-family: 'REM', sans-serif; margin: auto; background-color: var(--white); color: var(--dark); }
+img { max-width: 100%; }
+a { outline: 0; text-decoration: none; color: var(--NBL1); }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+button {
+	cursor: pointer;
+	border-radius: 5px;
+	font-family: inherit;
+}
+
+button a {
+	color: #14a8a3;
+}
+
+button a:hover {
+	text-decoration: none;
+}
+
+/* div, img, a, ul, li {
+	border: 1px solid #00ff0070;
+} */
+
+/* Navigation */
+.topBarNav {
+	overflow: hidden;
+	background-color: #000429;
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	z-index: 5;
+	position: sticky;
+	top: 0;
+}
+
+.topBarNav .app-brand {
+	cursor: pointer;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	float: left;
+	margin: 3px 18px;
+}
+
+.topBarNav .app-brand .app-icon {
+	display: inline-block;
+}
+
+.topBarNav .app-brand .app-icon img {
+	width: 40px;
+	margin: 2px;
+	background: #0000;
+}
+
+.topBarNav .app-brand .app-name {
+	display: inline;
+	color: var(--LIBL2);
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.topBarNav .navbar {
+	display: inline-block;
+}
+
+.topBarNav .navbar ul {
+	margin: 13px 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+	display: inline-block;
+}
+
+.topBarNav .navbar ul li {
+	padding: 0 5px;
+	line-height: 20px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.topBarNav .navbar ul li a {
+	display: block;
+	color: #14a8a3;
+	text-align: center;
+	padding: 2px;
+	font-size: 0.75em;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	transition: 0.25s;
+}
+
+.topBarNav .navbar ul li a:hover { color: #BAE6FC; }
+
+.topBarNav .profile-bar {
+	display: inline-flex;
+	float: right;
+	flex-direction: row;
+	align-items: center;
+	margin: 7px 18px;
+}
+
+.topBarNav .profile-bar .login-btn-div {
+	display: inline-block;
+}
+
+.topBarNav .profile-bar .login-btn-div button {
+	border: none;
+	background-color: transparent;
+	color: #00dede;
+	padding: 3px 6px;
+	font-size: 15px;
+	transition: 2.5s;
+}
+
+.topBarNav .profile-bar .login-btn-div button:hover {
+	border-bottom: 1px solid #00dede;
+}
+
+.topBarNav .profile-bar .profile-info-div {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	border: 1px solid red;
+	border-radius: 6px;
+	padding-inline: 3px;
+}
+
+.topBarNav .profile-bar .profile-info-div .profile-img {
+	display: inline-block;
+}
+
+.topBarNav .profile-bar .profile-info-div .profile-img img {
+	width: 28px;
+	margin: 3px;
+	border-radius: 50%;
+}
+
+.topBarNav .profile-bar .profile-info-div .profile-name {
+	display: inline;
+	color: var(--white);
+	font-weight: 300;
+	font-size: 15px;
+	margin-inline: 6px;
+}
+
+/* .iContent {} */
+
+.intro {
+	width: 100%;
+	margin: 0;
+	padding: 20px 10px;
+	position: relative;
+	background: #08080688 url("images/main-image.png") no-repeat center center;
+	background-blend-mode: overlay;
+	background-size: cover;
+	color: #f5f5f2;
+}
+
+
+/* Footer */
+.footer .copyright {
+	background-color: var(--dark);
+	padding: 0.6em 0.5em;
+	text-align: center;
+	font-size: 0.75em;
+	color: #838383;
+}
+
+.footer .copyright span { font-weight: bold; }
